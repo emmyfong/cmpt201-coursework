@@ -72,9 +72,9 @@ int main(void) {
 
   initialize_block(free_block1, 6, free_block2, 1);
   initialize_block(free_block2, 12, free_block3, 2);
-  initialize_block(free_block1, 24, free_block4, 3);
-  initialize_block(free_block1, 8, free_block5, 4);
-  initialize_block(free_block1, 4, NULL, 5);
+  initialize_block(free_block3, 24, free_block4, 3);
+  initialize_block(free_block4, 8, free_block5, 4);
+  initialize_block(free_block5, 4, NULL, 5);
 
   struct header *free_list_ptr = free_block1;
 
